@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="toggle-box">
+            <div class="toggle-body toggle-body-left" id="toggle-body">
+                <div id="toggle-btn" class="toggle-btn left-position"></div>
+            </div>
+            <label id="toggle-label" 
+            for="toggle-body" class="toggle-label">
+                Motiuation
+            </label>
+        </div>
+    </div>
+
+    <div class="background-layer">
+        <video class="background-video" id="video-left" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+            <source id="video-src" src="./assets/motivation.mp4" type="video/mp4">
+        </video>
+
+        <video style="display: none;" class="background-video" id="video-right" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+            <source id="video-src" src="./assets/cat-cat-jumping.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="main-block">
+        <div class="sub-block">
+            <button id="quote-btn" class="quote-btn quote-btn-left">
+                <h1>
+                    Сгенерировать цитату
+                </h1>
+            </button>
+    
+            <p id="quote" class="quote quote-left">
+    
+            </p>
+    
+            <p id="author" class="quote quote-left">
+    
+            </p>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
